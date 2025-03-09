@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:opening_doors/companyReg.dart';
 import 'package:opening_doors/workStyle.dart';
 
 class Skillset extends StatefulWidget {
@@ -120,7 +121,10 @@ class _SelectSkillsScreenState extends State< Skillset> {
               children: [
           
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+
+                        Navigator.push(context, MaterialPageRoute(builder: (context)=> companyReg()));
+                  },
                   icon: Icon(Icons.arrow_back, color: Colors.orange),
                   padding: EdgeInsets.all(12),
                   constraints: BoxConstraints(),

@@ -3,8 +3,11 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:opening_doors/workStyle.dart';
+import 'package:opening_doors/workplace.dart';
 
 class workStyle2 extends StatefulWidget {
+
   @override
   State<workStyle2> createState() => _WorkStyleScreenState();
 }
@@ -83,7 +86,9 @@ class _WorkStyleScreenState extends State<workStyle2> {
               children: [
         
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                     Navigator.push(context, MaterialPageRoute(builder: (context)=> workStyle()));
+                  },
                   icon: Icon(Icons.arrow_back, color: Colors.orange),
                   padding: EdgeInsets.all(12),
                   constraints: BoxConstraints(),
@@ -91,7 +96,9 @@ class _WorkStyleScreenState extends State<workStyle2> {
 
          
                 ElevatedButton(
-                  onPressed: selectedOption != null ? () {} : null, 
+                  onPressed: selectedOption != null ? () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> workplace()));
+                  } : null, 
                   style: ElevatedButton.styleFrom(
                     backgroundColor: selectedOption != null ? Colors.orange : Colors.grey,
                     shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(8)),

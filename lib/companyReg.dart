@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:opening_doors/getStart.dart';
+import 'package:opening_doors/login.dart';
+import 'package:opening_doors/register.dart';
 
 class companyReg extends StatefulWidget{
     const companyReg ({Key? key});
@@ -23,7 +25,9 @@ class companyRegState  extends State<companyReg>{
             children: [
               IconButton(
                 icon: Icon(Icons.arrow_back),
-                onPressed: () {},
+                onPressed: () {
+                      Navigator.push(context, MaterialPageRoute(builder: (context)=> register()));
+                },
                 style:ButtonStyle(
                   backgroundColor: MaterialStateProperty.all(Colors.orangeAccent),
                 )

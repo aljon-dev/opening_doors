@@ -3,6 +3,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:opening_doors/skillSet.dart';
 import 'package:opening_doors/workStyle2.dart';
 
 class workStyle extends StatefulWidget {
@@ -85,6 +86,7 @@ class _WorkStyleScreenState extends State<workStyle> {
         
                 IconButton(
                   onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=> Skillset()));
                     
                   },
                   icon: Icon(Icons.arrow_back, color: Colors.orange),

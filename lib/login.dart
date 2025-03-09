@@ -4,6 +4,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:opening_doors/joinAs.dart';
+import 'package:opening_doors/main.dart';
 
 class loginScreen extends StatefulWidget{
     const loginScreen ({Key? key});
@@ -32,7 +33,7 @@ class loginScreenState extends State<loginScreen>{
             // Back Button
             IconButton(
               onPressed: () {
-                Navigator.pop(context);
+              Navigator.push(context, MaterialPageRoute(builder: (context)=> OpeningDoors()));
               },
               icon: const Icon(Icons.arrow_back),
               color: Colors.black,
