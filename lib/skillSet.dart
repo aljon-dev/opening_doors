@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:opening_doors/workStyle.dart';
 
 class Skillset extends StatefulWidget {
   @override
@@ -138,7 +139,9 @@ class _SelectSkillsScreenState extends State< Skillset> {
 
               
                 ElevatedButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(context, MaterialPageRoute(builder: (context)=>workStyle()));
+                  },
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.orange,
                         foregroundColor: Colors.black,
