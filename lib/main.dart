@@ -26,8 +26,6 @@ class OpeningDoors extends StatefulWidget {
   const OpeningDoors ({super.key,});
 
 
-
-
   @override
   State<OpeningDoors> createState() => OpeningDoorsState();
 }
